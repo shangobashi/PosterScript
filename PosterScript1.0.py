@@ -246,7 +246,7 @@ if cart_regexp.search(driver.title): ##If the Add to cart button doesnt redirect
 else:
     print "Page title doest not contain Cart"
     x = 1
-    while not cart_regexp.search(page_title):
+    while not cart_regexp.search(driver.title):
         tries = x
         print "Now clicking Add to Cart again, try #"+tries
         x=x+1
