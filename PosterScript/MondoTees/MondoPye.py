@@ -1,16 +1,22 @@
+#This file is part of PosterScript.
+#Intended to work on MondoTees' website to automate the buying process
+#of their in-demand limited posters.
+#
+#This file is only made available for informational purposes and is not
+#to be used for commercial or personnal use.
+#Author: Selim Docquir
+#Date of origin : January 2013
+
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support.select import Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import re
-import winsound, sys
 import time
 import easygui as eg
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.selenium import *
 
 ##Initialitialing global variables 
 program_title = 'MondoPye'
@@ -72,7 +78,6 @@ def main():
     if edition_choice=='Variant':
         poster_link = get_poster_link_variant(list_urls, poster_name)
     driver.get(poster_link)
-    play_sound()
     time.sleep(1)
     print driver.title
     switch_tab(2)
@@ -132,9 +137,6 @@ def cc_box():
     choices_type=['Mastercard','Visa','American Express','Discover']
     cc_type=eg.choicebox(msg,program_title,choices_type)
     return cc_num, cvv2, exp_month,exp_year,cc_type
-
-def play_sound(): 
-    winsound.PlaySound("SystemExclamation", winsound.SND_ASYNC)
     
 def check_exists_by_partial_link_text(link_text):
     driver.implicitly_wait(0.5)
