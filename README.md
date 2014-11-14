@@ -4,7 +4,7 @@ What is it?
 -----------
 PosterScript is an ensemble of automation scripts that facilitate the purchase of limited edition posters from popular websites such as MondoTees and others.
 It is written in python and mainly uses the selenium module to automate the various browser tasks it needs to accomplish to successfully purchase a poster 
-without the needing the user to manually refresh for hours.
+without the need for the user to manually refresh for hours.
 
 Purpose
 -------
@@ -15,9 +15,7 @@ the purchasing limits set on posters, and use at your own risks. I am not respon
 
 Installation
 ------------
-There is no installation process. Each script requires python 2.7, selenium and easygui to be installed on your system.
-In addition, you will need the latest version of Mozilla Firefox with the plug-in Adblock+.
-Included is a profile ("MOW") with the necessary .css and .jpg elements blocked.
+There is no installation process. Simply run the scripts with the necessary modules installed.
 
 Licensing
 ---------
