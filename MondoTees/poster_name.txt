@@ -1,8 +1,0 @@
-#This file needs to contain a word or more that will be part of the product name that you are trying to purchase.
-#Note that
-#Example1:
-Guardians
-#Example2:
-Galaxy
-#Example3:
-Guardians of the Galaxy

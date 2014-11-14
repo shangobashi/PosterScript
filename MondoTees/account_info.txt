@@ -1,9 +1,1 @@
-#This file needs to contain the account information for your MondoTees purchase
-#It can contain multiple accounts.
-#if not Gift Card code is present, you will be prompted to enter 1 or 2 codes during startup
-#Please enter your information in the following format
-#
-#
-email@example.com	password	NameofAccount	GiftCardCode
-email2@example.com	password	NameofAccount2	GiftCardCode2
-##
+emailaddress@example.com	thisismypassword

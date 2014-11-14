@@ -1,0 +1,8 @@
+## Delete all lines starting with pound sign before using
+## Format for product names is ass follow
+## - Only the first line of this text file can be used
+## - You can provide a maximum of 3 keywords that the bot will look for in the links on the home page
+## - The bot will stop looking as soon as it finds one of these keywords, so they cannot be used in combination
+## - Each keywords needs to be separated by a space
+## - Keywords need to be lower-case
+## Example : horkey towers lotr
